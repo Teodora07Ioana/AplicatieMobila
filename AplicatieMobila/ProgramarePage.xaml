@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicatieMobila.ProgramarePage"
+             Title="Programare Coafor">
+
+    <VerticalStackLayout Spacing="15" Padding="10">
+        <Label Text="Data și Ora Programării:" FontAttributes="Bold"/>
+        <DatePicker x:Name="datePicker"/>
+        <TimePicker x:Name="timePicker"/>
+
+        <Label Text="Selectați Serviciul:" FontAttributes="Bold"/>
+        <Picker x:Name="servicePicker" >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Tuns</x:String>
+                    <x:String>Vopsit</x:String>
+                    <!-- Alte servicii -->
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button x:Name="confirmAppointmentButton" Text="Confirmă Programarea" Clicked="OnConfirmAppointment"/>
+
+        <!-- Adăugat aici -->
+       
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicatieMobila.AboutPage"
+            
+             Title="CoaforPage">
+
+    <VerticalStackLayout Spacing="10" Margin="10">
+
+        <!-- Header cu Logo și Titlu -->
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="coafor.png"
+                   SemanticProperties.Description="Logo Coafor"
+                   HeightRequest="64" />
+            <Label FontSize="22" FontAttributes="Bold" Text="Coaforul Meu" 
+                   VerticalOptions="End" />
+            <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
+        </HorizontalStackLayout>
+
+        <!-- Descrierea Scopului Aplicației -->
+        <Label Text="Această aplicație te ajută să îți gestionezi programările la coafor." />
+
+        <!-- Secțiunea de Servicii Oferite -->
+        <Label FontSize="18" FontAttributes="Bold" Text="Serviciile Noastre:" />
+        <Label Text="Tuns, Vopsit, Coafat, Tratamente de păr, etc." />
+
+        <!-- Secțiunea de Programare -->
+        <Label FontSize="18" FontAttributes="Bold" Text="Programează-te Acum!" />
+        <Button Text="Programare" Clicked="OnScheduleAppointment" />
+
+    </VerticalStackLayout>
+</ContentPage>

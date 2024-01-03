@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicatieMobila.ProgramarileMelePage"
+             Title="Programările Mele">
+
+    <StackLayout>
+        <!-- ListView pentru afișarea programărilor -->
+        <ListView x:Name="programariListView" ItemsSource="{Binding Programarile}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding Serviciu}" />
+                            <Label Text="{Binding Data, StringFormat='{0:dd/MM/yyyy}'}" />
+                            <Label Text="{Binding Ora, StringFormat='{0:hh\\:mm}'}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

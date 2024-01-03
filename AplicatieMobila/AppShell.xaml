@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+ x:Class="AplicatieMobila.AppShell"
+ xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ xmlns:local="clr-namespace:AplicatieMobila"
+ Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <!-- Pagina de Programări -->
+        <ShellContent
+     Title="Programări"
+     ContentTemplate="{DataTemplate local:ProgramarePage}"
+     />
+
+        <!-- Pagina de Servicii -->
+        <ShellContent
+     Title="Servicii"
+     ContentTemplate="{DataTemplate local:ServiciiPage}"
+     />
+        <ShellContent Title="Programările Mele"
+                      Icon="coafor.png"
+                      Route="ProgramarileMelePage"
+                      ContentTemplate="{DataTemplate local:ProgramarileMelePage}"></ShellContent>
+     </TabBar>
+    
+</Shell>

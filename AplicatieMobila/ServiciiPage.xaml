@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicatieMobila.ServiciiPage"
+             Title="Serviciile Noastre">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="10">
+
+            <!-- Titlu secțiune -->
+            <Label Text="Serviciile Noastre" FontSize="Large" FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <!-- Lista de servicii -->
+            <!-- Serviciul 1 -->
+            <Frame CornerRadius="10" Padding="10" Margin="10" BorderColor="LightGray">
+                <VerticalStackLayout>
+                    <Label Text="Tuns" FontAttributes="Bold" FontSize="Medium"/>
+                    <Label Text="Descriere scurtă a serviciului de tuns..."/>
+                    <Label Text="Preț: 100 RON"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Serviciul 2 -->
+            <Frame CornerRadius="10" Padding="10" Margin="10" BorderColor="LightGray">
+                <VerticalStackLayout>
+                    <Label Text="Vopsit" FontAttributes="Bold" FontSize="Medium"/>
+                    <Label Text="Descriere scurtă a serviciului de vopsit..."/>
+                    <Label Text="Preț: 200 RON"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Adăugați aici alte servicii în același format -->
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
